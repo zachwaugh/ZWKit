@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9279C706140819C100D50D67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C705140819C100D50D67 /* Cocoa.framework */; };
+		9279C710140819C100D50D67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9279C70E140819C100D50D67 /* InfoPlist.strings */; };
+		9279C712140819C100D50D67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C711140819C100D50D67 /* main.m */; };
+		9279C716140819C100D50D67 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9279C714140819C100D50D67 /* Credits.rtf */; };
+		9279C719140819C100D50D67 /* ZWKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C718140819C100D50D67 /* ZWKitAppDelegate.m */; };
+		9279C71C140819C100D50D67 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9279C71A140819C100D50D67 /* MainMenu.xib */; };
+		9279C724140819C100D50D67 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C723140819C100D50D67 /* SenTestingKit.framework */; };
+		9279C725140819C100D50D67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C705140819C100D50D67 /* Cocoa.framework */; };
+		9279C72D140819C100D50D67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9279C72B140819C100D50D67 /* InfoPlist.strings */; };
+		9279C73C140819E100D50D67 /* ZWRectHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C73B140819E100D50D67 /* ZWRectHelpers.m */; };
+		9279C73F14081A7200D50D67 /* ZWRectHelpersTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C73E14081A7200D50D67 /* ZWRectHelpersTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9279C726140819C100D50D67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9279C6F8140819C000D50D67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9279C700140819C100D50D67;
+			remoteInfo = ZWKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9279C701140819C100D50D67 /* ZWKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZWKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9279C705140819C100D50D67 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9279C708140819C100D50D67 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9279C709140819C100D50D67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9279C70A140819C100D50D67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9279C70D140819C100D50D67 /* ZWKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZWKit-Info.plist"; sourceTree = "<group>"; };
+		9279C70F140819C100D50D67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9279C711140819C100D50D67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9279C713140819C100D50D67 /* ZWKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZWKit-Prefix.pch"; sourceTree = "<group>"; };
+		9279C715140819C100D50D67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9279C717140819C100D50D67 /* ZWKitAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZWKitAppDelegate.h; sourceTree = "<group>"; };
+		9279C718140819C100D50D67 /* ZWKitAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZWKitAppDelegate.m; sourceTree = "<group>"; };
+		9279C71B140819C100D50D67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9279C722140819C100D50D67 /* ZWKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9279C723140819C100D50D67 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9279C72A140819C100D50D67 /* ZWKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZWKitTests-Info.plist"; sourceTree = "<group>"; };
+		9279C72C140819C100D50D67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9279C73A140819E100D50D67 /* ZWRectHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRectHelpers.h; sourceTree = "<group>"; };
+		9279C73B140819E100D50D67 /* ZWRectHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRectHelpers.m; sourceTree = "<group>"; };
+		9279C73D14081A7200D50D67 /* ZWRectHelpersTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWRectHelpersTest.h; sourceTree = "<group>"; };
+		9279C73E14081A7200D50D67 /* ZWRectHelpersTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWRectHelpersTest.m; sourceTree = "<group>"; };
+		9279C74114081AC300D50D67 /* ZWKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWKit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9279C6FE140819C100D50D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C706140819C100D50D67 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9279C71E140819C100D50D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C724140819C100D50D67 /* SenTestingKit.framework in Frameworks */,
+				9279C725140819C100D50D67 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9279C6F6140819C000D50D67 = {
+			isa = PBXGroup;
+			children = (
+				9279C70B140819C100D50D67 /* ZWKit */,
+				9279C728140819C100D50D67 /* ZWKitTests */,
+				9279C704140819C100D50D67 /* Frameworks */,
+				9279C702140819C100D50D67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9279C702140819C100D50D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9279C701140819C100D50D67 /* ZWKit.app */,
+				9279C722140819C100D50D67 /* ZWKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9279C704140819C100D50D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9279C705140819C100D50D67 /* Cocoa.framework */,
+				9279C723140819C100D50D67 /* SenTestingKit.framework */,
+				9279C707140819C100D50D67 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9279C707140819C100D50D67 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9279C708140819C100D50D67 /* AppKit.framework */,
+				9279C709140819C100D50D67 /* CoreData.framework */,
+				9279C70A140819C100D50D67 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9279C70B140819C100D50D67 /* ZWKit */ = {
+			isa = PBXGroup;
+			children = (
+				9279C74014081AA800D50D67 /* lib */,
+				9279C717140819C100D50D67 /* ZWKitAppDelegate.h */,
+				9279C718140819C100D50D67 /* ZWKitAppDelegate.m */,
+				9279C71A140819C100D50D67 /* MainMenu.xib */,
+				9279C70C140819C100D50D67 /* Supporting Files */,
+			);
+			path = ZWKit;
+			sourceTree = "<group>";
+		};
+		9279C70C140819C100D50D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9279C70D140819C100D50D67 /* ZWKit-Info.plist */,
+				9279C70E140819C100D50D67 /* InfoPlist.strings */,
+				9279C711140819C100D50D67 /* main.m */,
+				9279C713140819C100D50D67 /* ZWKit-Prefix.pch */,
+				9279C714140819C100D50D67 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9279C728140819C100D50D67 /* ZWKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9279C729140819C100D50D67 /* Supporting Files */,
+				9279C73D14081A7200D50D67 /* ZWRectHelpersTest.h */,
+				9279C73E14081A7200D50D67 /* ZWRectHelpersTest.m */,
+			);
+			path = ZWKitTests;
+			sourceTree = "<group>";
+		};
+		9279C729140819C100D50D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9279C72A140819C100D50D67 /* ZWKitTests-Info.plist */,
+				9279C72B140819C100D50D67 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9279C74014081AA800D50D67 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				9279C74114081AC300D50D67 /* ZWKit.h */,
+				9279C73A140819E100D50D67 /* ZWRectHelpers.h */,
+				9279C73B140819E100D50D67 /* ZWRectHelpers.m */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9279C700140819C100D50D67 /* ZWKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9279C734140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKit" */;
+			buildPhases = (
+				9279C6FD140819C100D50D67 /* Sources */,
+				9279C6FE140819C100D50D67 /* Frameworks */,
+				9279C6FF140819C100D50D67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWKit;
+			productName = ZWKit;
+			productReference = 9279C701140819C100D50D67 /* ZWKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9279C721140819C100D50D67 /* ZWKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9279C737140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKitTests" */;
+			buildPhases = (
+				9279C71D140819C100D50D67 /* Sources */,
+				9279C71E140819C100D50D67 /* Frameworks */,
+				9279C71F140819C100D50D67 /* Resources */,
+				9279C720140819C100D50D67 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9279C727140819C100D50D67 /* PBXTargetDependency */,
+			);
+			name = ZWKitTests;
+			productName = ZWKitTests;
+			productReference = 9279C722140819C100D50D67 /* ZWKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9279C6F8140819C000D50D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Figure 53";
+			};
+			buildConfigurationList = 9279C6FB140819C000D50D67 /* Build configuration list for PBXProject "ZWKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9279C6F6140819C000D50D67;
+			productRefGroup = 9279C702140819C100D50D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9279C700140819C100D50D67 /* ZWKit */,
+				9279C721140819C100D50D67 /* ZWKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9279C6FF140819C100D50D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C710140819C100D50D67 /* InfoPlist.strings in Resources */,
+				9279C716140819C100D50D67 /* Credits.rtf in Resources */,
+				9279C71C140819C100D50D67 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9279C71F140819C100D50D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C72D140819C100D50D67 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9279C720140819C100D50D67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9279C6FD140819C100D50D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C712140819C100D50D67 /* main.m in Sources */,
+				9279C719140819C100D50D67 /* ZWKitAppDelegate.m in Sources */,
+				9279C73C140819E100D50D67 /* ZWRectHelpers.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9279C71D140819C100D50D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C73F14081A7200D50D67 /* ZWRectHelpersTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9279C727140819C100D50D67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9279C700140819C100D50D67 /* ZWKit */;
+			targetProxy = 9279C726140819C100D50D67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9279C70E140819C100D50D67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9279C70F140819C100D50D67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9279C714140819C100D50D67 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9279C715140819C100D50D67 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9279C71A140819C100D50D67 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9279C71B140819C100D50D67 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9279C72B140819C100D50D67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9279C72C140819C100D50D67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9279C732140819C100D50D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9279C733140819C100D50D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9279C735140819C100D50D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKit/ZWKit-Prefix.pch";
+				INFOPLIST_FILE = "ZWKit/ZWKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9279C736140819C100D50D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKit/ZWKit-Prefix.pch";
+				INFOPLIST_FILE = "ZWKit/ZWKit-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9279C738140819C100D50D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZWKit.app/Contents/MacOS/ZWKit";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKit/ZWKit-Prefix.pch";
+				INFOPLIST_FILE = "ZWKitTests/ZWKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9279C739140819C100D50D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ZWKit.app/Contents/MacOS/ZWKit";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKit/ZWKit-Prefix.pch";
+				INFOPLIST_FILE = "ZWKitTests/ZWKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9279C6FB140819C000D50D67 /* Build configuration list for PBXProject "ZWKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9279C732140819C100D50D67 /* Debug */,
+				9279C733140819C100D50D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9279C734140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9279C735140819C100D50D67 /* Debug */,
+				9279C736140819C100D50D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9279C737140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9279C738140819C100D50D67 /* Debug */,
+				9279C739140819C100D50D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9279C6F8140819C000D50D67 /* Project object */;
+}
