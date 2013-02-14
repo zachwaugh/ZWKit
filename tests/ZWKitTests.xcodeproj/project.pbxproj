@@ -1,0 +1,390 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		926F3CAE16CD8815001F2610 /* NSImage+ZW.m in Sources */ = {isa = PBXBuildFile; fileRef = 926F3CA816CD8815001F2610 /* NSImage+ZW.m */; };
+		926F3CAF16CD8815001F2610 /* ZWGeometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 926F3CAB16CD8815001F2610 /* ZWGeometry.m */; };
+		926F3CB016CD8815001F2610 /* ZWUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 926F3CAD16CD8815001F2610 /* ZWUtilities.m */; };
+		926F3CD916CD9820001F2610 /* libExpecta-macosx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 926F3CD716CD9054001F2610 /* libExpecta-macosx.a */; };
+		9279C724140819C100D50D67 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C723140819C100D50D67 /* SenTestingKit.framework */; };
+		9279C725140819C100D50D67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C705140819C100D50D67 /* Cocoa.framework */; };
+		9279C73F14081A7200D50D67 /* ZWGeometryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C73E14081A7200D50D67 /* ZWGeometryTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		926F3CA716CD8815001F2610 /* NSImage+ZW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSImage+ZW.h"; sourceTree = "<group>"; };
+		926F3CA816CD8815001F2610 /* NSImage+ZW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSImage+ZW.m"; sourceTree = "<group>"; };
+		926F3CA916CD8815001F2610 /* ZWKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWKit.h; sourceTree = "<group>"; };
+		926F3CAA16CD8815001F2610 /* ZWGeometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGeometry.h; sourceTree = "<group>"; };
+		926F3CAB16CD8815001F2610 /* ZWGeometry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGeometry.m; sourceTree = "<group>"; };
+		926F3CAC16CD8815001F2610 /* ZWUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWUtilities.h; sourceTree = "<group>"; };
+		926F3CAD16CD8815001F2610 /* ZWUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWUtilities.m; sourceTree = "<group>"; };
+		926F3CB416CD88B1001F2610 /* EXPBackwardCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPBackwardCompatibility.h; sourceTree = "<group>"; };
+		926F3CB516CD88B1001F2610 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+		926F3CB616CD88B1001F2610 /* EXPDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPDefines.h; sourceTree = "<group>"; };
+		926F3CB716CD88B1001F2610 /* EXPDoubleTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPDoubleTuple.h; sourceTree = "<group>"; };
+		926F3CB816CD88B1001F2610 /* Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expecta.h; sourceTree = "<group>"; };
+		926F3CB916CD88B1001F2610 /* ExpectaSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpectaSupport.h; sourceTree = "<group>"; };
+		926F3CBA16CD88B1001F2610 /* EXPExpect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPExpect.h; sourceTree = "<group>"; };
+		926F3CBB16CD88B1001F2610 /* EXPFloatTuple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPFloatTuple.h; sourceTree = "<group>"; };
+		926F3CBC16CD88B1001F2610 /* EXPMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatcher.h; sourceTree = "<group>"; };
+		926F3CBD16CD88B1001F2610 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		926F3CBE16CD88B1001F2610 /* EXPMatchers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPMatchers.h; sourceTree = "<group>"; };
+		926F3CBF16CD88B1001F2610 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		926F3CC016CD88B1001F2610 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		926F3CC116CD88B1001F2610 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		926F3CC216CD88B1001F2610 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		926F3CC316CD88B1001F2610 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		926F3CC416CD88B1001F2610 /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		926F3CC516CD88B1001F2610 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		926F3CC616CD88B1001F2610 /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		926F3CC716CD88B1001F2610 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		926F3CC816CD88B1001F2610 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		926F3CC916CD88B1001F2610 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		926F3CCA16CD88B1001F2610 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		926F3CCB16CD88B1001F2610 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		926F3CCC16CD88B1001F2610 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		926F3CCD16CD88B1001F2610 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		926F3CCE16CD88B1001F2610 /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		926F3CCF16CD88B1001F2610 /* EXPMatchers+raise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		926F3CD016CD88B1001F2610 /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		926F3CD116CD88B1001F2610 /* NSObject+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Expecta.h"; sourceTree = "<group>"; };
+		926F3CD216CD88B1001F2610 /* NSValue+Expecta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSValue+Expecta.h"; sourceTree = "<group>"; };
+		926F3CD316CD88F9001F2610 /* ZWKitTests-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZWKitTests-Prefix.pch"; sourceTree = "<group>"; };
+		926F3CD716CD9054001F2610 /* libExpecta-macosx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libExpecta-macosx.a"; path = "Expecta/libExpecta-macosx.a"; sourceTree = "<group>"; };
+		9279C705140819C100D50D67 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9279C708140819C100D50D67 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9279C709140819C100D50D67 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9279C70A140819C100D50D67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9279C722140819C100D50D67 /* ZWKitTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZWKitTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9279C723140819C100D50D67 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9279C72A140819C100D50D67 /* ZWKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZWKitTests-Info.plist"; sourceTree = "<group>"; };
+		9279C73D14081A7200D50D67 /* ZWGeometryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGeometryTest.h; sourceTree = "<group>"; };
+		9279C73E14081A7200D50D67 /* ZWGeometryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGeometryTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9279C71E140819C100D50D67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C724140819C100D50D67 /* SenTestingKit.framework in Frameworks */,
+				9279C725140819C100D50D67 /* Cocoa.framework in Frameworks */,
+				926F3CD916CD9820001F2610 /* libExpecta-macosx.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		926F3CA616CD87C6001F2610 /* ZWKit */ = {
+			isa = PBXGroup;
+			children = (
+				926F3CA916CD8815001F2610 /* ZWKit.h */,
+				926F3CA716CD8815001F2610 /* NSImage+ZW.h */,
+				926F3CA816CD8815001F2610 /* NSImage+ZW.m */,
+				926F3CAA16CD8815001F2610 /* ZWGeometry.h */,
+				926F3CAB16CD8815001F2610 /* ZWGeometry.m */,
+				926F3CAC16CD8815001F2610 /* ZWUtilities.h */,
+				926F3CAD16CD8815001F2610 /* ZWUtilities.m */,
+			);
+			name = ZWKit;
+			path = ../lib;
+			sourceTree = "<group>";
+		};
+		926F3CB316CD88A1001F2610 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				926F3CB416CD88B1001F2610 /* EXPBackwardCompatibility.h */,
+				926F3CB516CD88B1001F2610 /* EXPBlockDefinedMatcher.h */,
+				926F3CB616CD88B1001F2610 /* EXPDefines.h */,
+				926F3CB716CD88B1001F2610 /* EXPDoubleTuple.h */,
+				926F3CB816CD88B1001F2610 /* Expecta.h */,
+				926F3CB916CD88B1001F2610 /* ExpectaSupport.h */,
+				926F3CBA16CD88B1001F2610 /* EXPExpect.h */,
+				926F3CBB16CD88B1001F2610 /* EXPFloatTuple.h */,
+				926F3CBC16CD88B1001F2610 /* EXPMatcher.h */,
+				926F3CBD16CD88B1001F2610 /* EXPMatcherHelpers.h */,
+				926F3CBE16CD88B1001F2610 /* EXPMatchers.h */,
+				926F3CBF16CD88B1001F2610 /* EXPMatchers+beCloseTo.h */,
+				926F3CC016CD88B1001F2610 /* EXPMatchers+beFalsy.h */,
+				926F3CC116CD88B1001F2610 /* EXPMatchers+beGreaterThan.h */,
+				926F3CC216CD88B1001F2610 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				926F3CC316CD88B1001F2610 /* EXPMatchers+beIdenticalTo.h */,
+				926F3CC416CD88B1001F2610 /* EXPMatchers+beInstanceOf.h */,
+				926F3CC516CD88B1001F2610 /* EXPMatchers+beInTheRangeOf.h */,
+				926F3CC616CD88B1001F2610 /* EXPMatchers+beKindOf.h */,
+				926F3CC716CD88B1001F2610 /* EXPMatchers+beLessThan.h */,
+				926F3CC816CD88B1001F2610 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				926F3CC916CD88B1001F2610 /* EXPMatchers+beNil.h */,
+				926F3CCA16CD88B1001F2610 /* EXPMatchers+beSubclassOf.h */,
+				926F3CCB16CD88B1001F2610 /* EXPMatchers+beTruthy.h */,
+				926F3CCC16CD88B1001F2610 /* EXPMatchers+contain.h */,
+				926F3CCD16CD88B1001F2610 /* EXPMatchers+equal.h */,
+				926F3CCE16CD88B1001F2610 /* EXPMatchers+haveCountOf.h */,
+				926F3CCF16CD88B1001F2610 /* EXPMatchers+raise.h */,
+				926F3CD016CD88B1001F2610 /* EXPUnsupportedObject.h */,
+				926F3CD116CD88B1001F2610 /* NSObject+Expecta.h */,
+				926F3CD216CD88B1001F2610 /* NSValue+Expecta.h */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		9279C6F6140819C000D50D67 = {
+			isa = PBXGroup;
+			children = (
+				926F3CA616CD87C6001F2610 /* ZWKit */,
+				9279C728140819C100D50D67 /* ZWKitTests */,
+				9279C704140819C100D50D67 /* Frameworks */,
+				9279C702140819C100D50D67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9279C702140819C100D50D67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9279C722140819C100D50D67 /* ZWKitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9279C704140819C100D50D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926F3CD716CD9054001F2610 /* libExpecta-macosx.a */,
+				9279C705140819C100D50D67 /* Cocoa.framework */,
+				9279C723140819C100D50D67 /* SenTestingKit.framework */,
+				9279C707140819C100D50D67 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9279C707140819C100D50D67 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9279C708140819C100D50D67 /* AppKit.framework */,
+				9279C709140819C100D50D67 /* CoreData.framework */,
+				9279C70A140819C100D50D67 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9279C728140819C100D50D67 /* ZWKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				926F3CB316CD88A1001F2610 /* Expecta */,
+				9279C73D14081A7200D50D67 /* ZWGeometryTest.h */,
+				9279C73E14081A7200D50D67 /* ZWGeometryTest.m */,
+				9279C729140819C100D50D67 /* Supporting Files */,
+			);
+			name = ZWKitTests;
+			sourceTree = "<group>";
+		};
+		9279C729140819C100D50D67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9279C72A140819C100D50D67 /* ZWKitTests-Info.plist */,
+				926F3CD316CD88F9001F2610 /* ZWKitTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9279C721140819C100D50D67 /* ZWKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9279C737140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKitTests" */;
+			buildPhases = (
+				9279C71D140819C100D50D67 /* Sources */,
+				9279C71E140819C100D50D67 /* Frameworks */,
+				9279C71F140819C100D50D67 /* Resources */,
+				9279C720140819C100D50D67 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZWKitTests;
+			productName = ZWKitTests;
+			productReference = 9279C722140819C100D50D67 /* ZWKitTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9279C6F8140819C000D50D67 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Figure 53";
+			};
+			buildConfigurationList = 9279C6FB140819C000D50D67 /* Build configuration list for PBXProject "ZWKitTests" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9279C6F6140819C000D50D67;
+			productRefGroup = 9279C702140819C100D50D67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9279C721140819C100D50D67 /* ZWKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9279C71F140819C100D50D67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9279C720140819C100D50D67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9279C71D140819C100D50D67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9279C73F14081A7200D50D67 /* ZWGeometryTest.m in Sources */,
+				926F3CAE16CD8815001F2610 /* NSImage+ZW.m in Sources */,
+				926F3CAF16CD8815001F2610 /* ZWGeometry.m in Sources */,
+				926F3CB016CD8815001F2610 /* ZWUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9279C732140819C100D50D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9279C733140819C100D50D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9279C738140819C100D50D67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKitTests-Prefix.pch";
+				INFOPLIST_FILE = "ZWKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Expecta\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9279C739140819C100D50D67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ZWKitTests-Prefix.pch";
+				INFOPLIST_FILE = "ZWKitTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/Expecta\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9279C6FB140819C000D50D67 /* Build configuration list for PBXProject "ZWKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9279C732140819C100D50D67 /* Debug */,
+				9279C733140819C100D50D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9279C737140819C100D50D67 /* Build configuration list for PBXNativeTarget "ZWKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9279C738140819C100D50D67 /* Debug */,
+				9279C739140819C100D50D67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9279C6F8140819C000D50D67 /* Project object */;
+}
