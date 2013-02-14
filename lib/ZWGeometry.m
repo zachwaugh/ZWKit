@@ -10,20 +10,29 @@
 
 #pragma mark - Rect
 
-NSRect ZWRectWithWidth(NSRect frame, CGFloat width)
+NSRect ZWRectWithWidth(NSRect rect, CGFloat width)
 {
-  NSRect newFrame = frame;
-  newFrame.size.width = width;
+  NSRect newRect = rect;
+  newRect.size.width = width;
   
-  return newFrame;
+  return newRect;
 }
 
-NSRect ZWRectWithHeight(NSRect frame, CGFloat height)
+NSRect ZWRectWithHeight(NSRect rect, CGFloat height)
 {
-  NSRect newFrame = frame;
-  newFrame.size.height = height;
+  NSRect newRect = rect;
+  newRect.size.height = height;
   
-  return newFrame;
+  return newRect;
+}
+
+NSRect ZWRectFitToRect(NSRect source, NSRect container)
+{
+  if (NSContainsRect(container, source)) {
+    return ZWCenteredRectInRect(source, container);
+  } else {
+    return source;
+  }
 }
 
 NSRect ZWCenteredRectInRect(NSRect rect, NSRect containerRect)

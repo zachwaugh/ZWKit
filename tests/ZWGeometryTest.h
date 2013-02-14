@@ -12,6 +12,7 @@
 
 - (void)testRectWithWidth;
 - (void)testRectWithHeight;
+- (void)testRectFitToRect;
 - (void)testCenteredRectInRect;
 - (void)testSizeConstrainedToWidth;
 - (void)testSizeConstrainedToHeight;
