@@ -50,45 +50,32 @@
 
 #pragma mark - Size
 
-- (void)testSizeForMaxWidth
+- (void)testSizeConstrainedToWidth
 {
   NSSize originalSize = NSMakeSize(4000, 3000);
   
-  NSSize size = ZWSizeForMaxWidth(originalSize, 500);
+  NSSize size = ZWSizeConstrainedToWidth(originalSize, 500);
   expect(size.width).to.equal(500);
   expect(size.height).to.equal(375);
   
   originalSize = NSMakeSize(2000, 4000);
-  size = ZWSizeForMaxWidth(originalSize, 500);
+  size = ZWSizeConstrainedToWidth(originalSize, 500);
   expect(size.width).to.equal(500);
   expect(size.height).to.equal(1000);
 }
 
-- (void)testSizeForMaxHeight
+- (void)testSizeConstrainedToHeight
 {
   NSSize originalSize = NSMakeSize(1024, 768);
   
-  NSSize size = ZWSizeForMaxHeight(originalSize, 500);
+  NSSize size = ZWSizeConstrainedToHeight(originalSize, 500);
   expect(size.width).to.equal(667);
   expect(size.height).to.equal(500);
   
   originalSize = NSMakeSize(800, 1200);
-  size = ZWSizeForMaxHeight(originalSize, 600);
+  size = ZWSizeConstrainedToHeight(originalSize, 600);
   expect(size.width).to.equal(400);
   expect(size.height).to.equal(600);
-}
-
-- (void)testHeightForSizeConstrainedToWidth
-{
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(100, 100), 100)).to.equal(100);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(101, 101), 100)).to.equal(100);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(50, 50), 100)).to.equal(50);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(100, 100), 50)).to.equal(50);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(400, 300), 100)).to.equal(75);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(300, 400), 100)).to.equal(133);
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(100, 100), 500)).to.equal(100);
-  
-  expect(ZWHeightForSizeConstrainedToWidth(CGSizeMake(101, 101), 100)).toNot.equal(101);
 }
 
 @end

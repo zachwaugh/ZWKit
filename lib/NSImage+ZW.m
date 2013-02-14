@@ -14,7 +14,7 @@
 - (NSImage *)imageConstrainedToWidth:(NSInteger)width
 {
   if (self.size.width > width) {
-    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeForMaxWidth(self.size, width)];
+    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeConstrainedToWidth(self.size, width)];
     [scaled lockFocus];
     [self drawInRect:NSMakeRect(0, 0, width, scaled.size.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
     [scaled unlockFocus];
@@ -28,7 +28,7 @@
 - (NSImage *)imageConstrainedToHeight:(NSInteger)height
 {
   if (self.size.height > height) {
-    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeForMaxHeight(self.size, height)];
+    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeConstrainedToHeight(self.size, height)];
     [scaled lockFocus];
     [self drawInRect:NSMakeRect(0, 0, scaled.size.width, height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
     [scaled unlockFocus];

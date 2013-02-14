@@ -13,8 +13,7 @@
 - (void)testRectWithWidth;
 - (void)testRectWithHeight;
 - (void)testCenteredRectInRect;
-- (void)testSizeForMaxWidth;
-- (void)testSizeForMaxHeight;
-- (void)testHeightForSizeConstrainedToWidth;
+- (void)testSizeConstrainedToWidth;
+- (void)testSizeConstrainedToHeight;
 
 @end

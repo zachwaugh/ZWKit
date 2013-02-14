@@ -36,7 +36,7 @@ NSRect ZWCenteredRectInRect(NSRect rect, NSRect containerRect)
 
 #pragma mark - Size
 
-NSSize ZWSizeForMaxWidth(NSSize size, CGFloat width)
+NSSize ZWSizeConstrainedToWidth(NSSize size, CGFloat width)
 {
   if (size.width <= width) {
     return size;
@@ -46,7 +46,7 @@ NSSize ZWSizeForMaxWidth(NSSize size, CGFloat width)
   }
 }
 
-NSSize ZWSizeForMaxHeight(NSSize size, CGFloat height)
+NSSize ZWSizeConstrainedToHeight(NSSize size, CGFloat height)
 {
   if (size.height <= height) {
     return size;
@@ -58,6 +58,5 @@ NSSize ZWSizeForMaxHeight(NSSize size, CGFloat height)
 
 CGFloat ZWHeightForSizeConstrainedToWidth(CGSize size, CGFloat width)
 {
-  NSSize constrainedSize = ZWSizeForMaxWidth(size, width);
-  return constrainedSize.height;
+  return ZWSizeConstrainedToWidth(size, width).height;
 }

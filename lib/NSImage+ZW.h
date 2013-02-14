@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Zach Waugh. All rights reserved.
 //
 
-
 #import <Cocoa/Cocoa.h>
 
 @interface NSImage (ZW)

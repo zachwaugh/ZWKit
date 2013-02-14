@@ -11,6 +11,6 @@
 extern NSRect ZWRectWithWidth(NSRect frame, CGFloat width);
 extern NSRect ZWRectWithHeight(NSRect frame, CGFloat height);
 extern NSRect ZWCenteredRectInRect(NSRect rect, NSRect containerRect);
-extern NSSize ZWSizeForMaxWidth(NSSize size, CGFloat width);
-extern NSSize ZWSizeForMaxHeight(NSSize size, CGFloat height);
+extern NSSize ZWSizeConstrainedToWidth(NSSize size, CGFloat width);
+extern NSSize ZWSizeConstrainedToHeight(NSSize size, CGFloat height);
 extern CGFloat ZWHeightForSizeConstrainedToWidth(CGSize size, CGFloat width);
