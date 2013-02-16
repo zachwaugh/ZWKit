@@ -111,4 +111,10 @@
   expect(size.height).to.equal(200);
 }
 
+- (void)testHeightForSizeConstrainedToWidth
+{
+	NSSize originalSize = NSMakeSize(4000, 3000);
+  expect(ZWHeightForSizeConstrainedToWidth(originalSize, 500)).to.equal(375);
+}
+
 @end

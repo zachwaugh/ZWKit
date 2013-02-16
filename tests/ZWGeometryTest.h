@@ -16,5 +16,6 @@
 - (void)testCenteredRectInRect;
 - (void)testSizeConstrainedToWidth;
 - (void)testSizeConstrainedToHeight;
+- (void)testHeightForSizeConstrainedToWidth;
 
 @end
