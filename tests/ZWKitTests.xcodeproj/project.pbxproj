@@ -14,6 +14,8 @@
 		9279C724140819C100D50D67 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C723140819C100D50D67 /* SenTestingKit.framework */; };
 		9279C725140819C100D50D67 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9279C705140819C100D50D67 /* Cocoa.framework */; };
 		9279C73F14081A7200D50D67 /* ZWGeometryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9279C73E14081A7200D50D67 /* ZWGeometryTest.m */; };
+		927B1F1E172067950018A855 /* NSArray+ZWKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B1F1D172067950018A855 /* NSArray+ZWKit.m */; };
+		927B1F21172068560018A855 /* NSArray+ZWKitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 927B1F20172068560018A855 /* NSArray+ZWKitTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +68,10 @@
 		9279C72A140819C100D50D67 /* ZWKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ZWKitTests-Info.plist"; sourceTree = "<group>"; };
 		9279C73D14081A7200D50D67 /* ZWGeometryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWGeometryTest.h; sourceTree = "<group>"; };
 		9279C73E14081A7200D50D67 /* ZWGeometryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWGeometryTest.m; sourceTree = "<group>"; };
+		927B1F1C172067950018A855 /* NSArray+ZWKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZWKit.h"; sourceTree = "<group>"; };
+		927B1F1D172067950018A855 /* NSArray+ZWKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZWKit.m"; sourceTree = "<group>"; };
+		927B1F1F172068560018A855 /* NSArray+ZWKitTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZWKitTest.h"; sourceTree = "<group>"; };
+		927B1F20172068560018A855 /* NSArray+ZWKitTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZWKitTest.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,8 @@
 				926F3CAB16CD8815001F2610 /* ZWGeometry.m */,
 				926F3CAC16CD8815001F2610 /* ZWUtilities.h */,
 				926F3CAD16CD8815001F2610 /* ZWUtilities.m */,
+				927B1F1C172067950018A855 /* NSArray+ZWKit.h */,
+				927B1F1D172067950018A855 /* NSArray+ZWKit.m */,
 			);
 			name = ZWKit;
 			path = ../lib;
@@ -177,10 +185,12 @@
 		9279C728140819C100D50D67 /* ZWKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				9279C729140819C100D50D67 /* Supporting Files */,
 				926F3CB316CD88A1001F2610 /* Expecta */,
 				9279C73D14081A7200D50D67 /* ZWGeometryTest.h */,
 				9279C73E14081A7200D50D67 /* ZWGeometryTest.m */,
-				9279C729140819C100D50D67 /* Supporting Files */,
+				927B1F1F172068560018A855 /* NSArray+ZWKitTest.h */,
+				927B1F20172068560018A855 /* NSArray+ZWKitTest.m */,
 			);
 			name = ZWKitTests;
 			sourceTree = "<group>";
@@ -276,6 +286,8 @@
 				926F3CAE16CD8815001F2610 /* NSImage+ZW.m in Sources */,
 				926F3CAF16CD8815001F2610 /* ZWGeometry.m in Sources */,
 				926F3CB016CD8815001F2610 /* ZWUtilities.m in Sources */,
+				927B1F1E172067950018A855 /* NSArray+ZWKit.m in Sources */,
+				927B1F21172068560018A855 /* NSArray+ZWKitTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
