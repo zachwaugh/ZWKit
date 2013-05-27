@@ -41,11 +41,12 @@
 
 - (NSImage *)imageConstrainedToSize:(NSSize)size
 {
-	// Don't scale if neight height nor width is larger than target size
-  if (self.size.height > size.height || self.size.width > size.width) {
-    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeConstrainedToSize(self.size, size)];
+	// Don't scale if image size is small enough already
+  if (!ZWSizeContainsSize(size, self.size)) {
+		NSSize scaledSize = ZWSizeConstrainedToSize(self.size, size);
+    NSImage *scaled = [[NSImage alloc] initWithSize:scaledSize];
     [scaled lockFocus];
-    [self drawInRect:NSMakeRect(0, 0, scaled.size.width, scaled.size.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+    [self drawInRect:NSMakeRect(0, 0, scaledSize.width, scaledSize.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
     [scaled unlockFocus];
     
     return scaled;

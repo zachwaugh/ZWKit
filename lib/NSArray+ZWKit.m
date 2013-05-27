@@ -14,13 +14,10 @@
 {
   if (!block) return self;
   
-  NSMutableArray *result = [NSMutableArray array];
+  NSMutableArray *result = [NSMutableArray arrayWithCapacity:self.count];
   
   for (id object in self) {
-    id value = block(object);
-    if (value) {
-      [result addObject:value];
-    }
+    [result addObject:block(object)];
   }
   
   return result;
@@ -43,9 +40,11 @@
 
 - (id)zw_reduce:(id (^)(id previous, id current))block
 {
-  id result = nil;
+  if (self.count <= 0) return nil;
+	
+  id result = self[0];
   
-  for (NSInteger i = 0; i < self.count; i++) {
+  for (NSUInteger i = 1; i < self.count; i++) {
     result = block(result, self[i]);
   }
   
