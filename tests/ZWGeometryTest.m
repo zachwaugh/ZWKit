@@ -46,16 +46,6 @@
   expect(newRect.size.width).to.equal(100);
   expect(newRect.origin.x).to.equal(450);
   expect(newRect.origin.y).to.equal(450);
-  
-  // Rect is too big for container and overflows
-  rect = NSMakeRect(0, 0, 200, 200);
-  container = NSMakeRect(0, 0, 150, 150);
-  newRect = ZWRectFitToRect(rect, container);
-  
-  expect(newRect.size.height).to.equal(150);
-  expect(newRect.size.width).to.equal(150);
-  expect(newRect.origin.x).to.equal(0);
-  expect(newRect.origin.y).to.equal(0);
 }
 
 - (void)testCenteredRectInRect
@@ -115,6 +105,23 @@
 {
 	NSSize originalSize = NSMakeSize(4000, 3000);
   expect(ZWHeightForSizeConstrainedToWidth(originalSize, 500)).to.equal(375);
+}
+
+- (void)testSizeContainsSize
+{
+	expect(ZWSizeContainsSize(NSMakeSize(5, 5), NSMakeSize(1, 1))).to.beTruthy();
+	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(400, 400))).to.beTruthy();
+	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(1000, 1000))).to.beFalsy();
+	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(1000, 400))).to.beFalsy();
+	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(400, 1000))).to.beFalsy();
+	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(500, 500))).to.beTruthy();
+}
+
+- (void)testSizeConstrainedToSize
+{
+	expect(ZWSizeConstrainedToSize(NSMakeSize(500, 500), NSMakeSize(500, 500))).to.equal(NSMakeSize(500, 500));
+	expect(ZWSizeConstrainedToSize(NSMakeSize(400, 400), NSMakeSize(500, 500))).to.equal(NSMakeSize(400, 400));
+	expect(ZWSizeConstrainedToSize(NSMakeSize(1000, 1000), NSMakeSize(500, 500))).to.equal(NSMakeSize(500, 500));
 }
 
 @end

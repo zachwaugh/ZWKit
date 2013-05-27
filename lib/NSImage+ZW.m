@@ -39,4 +39,19 @@
   }
 }
 
+- (NSImage *)imageConstrainedToSize:(NSSize)size
+{
+	// Don't scale if neight height nor width is larger than target size
+  if (self.size.height > size.height || self.size.width > size.width) {
+    NSImage *scaled = [[NSImage alloc] initWithSize:ZWSizeConstrainedToSize(self.size, size)];
+    [scaled lockFocus];
+    [self drawInRect:NSMakeRect(0, 0, scaled.size.width, scaled.size.height) fromRect:NSZeroRect operation:NSCompositeSourceOver fraction:1.0];
+    [scaled unlockFocus];
+    
+    return scaled;
+  } else {
+    return self;
+  }
+}
+
 @end

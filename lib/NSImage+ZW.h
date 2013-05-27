@@ -12,5 +12,6 @@
 
 - (NSImage *)imageConstrainedToWidth:(NSInteger)width;
 - (NSImage *)imageConstrainedToHeight:(NSInteger)height;
+- (NSImage *)imageConstrainedToSize:(NSSize)size;
 
 @end
