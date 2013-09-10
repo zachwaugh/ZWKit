@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ZWKit'
-  s.version      = '0.0.2'
+  s.version      = '0.0.3'
   s.summary      = 'Loose collection of classes and functions'
   s.license      = 'MIT'
   s.homepage     = 'https://github.com/zachwaugh/ZWKit'
