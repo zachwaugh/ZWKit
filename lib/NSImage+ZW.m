@@ -6,6 +6,8 @@
 //  Copyright (c) 2012 Zach Waugh. All rights reserved.
 //
 
+#if !TARGET_OS_IPHONE
+
 #import "NSImage+ZW.h"
 #import "ZWGeometry.h"
 
@@ -56,3 +58,5 @@
 }
 
 @end
+
+#endif

@@ -10,32 +10,32 @@
 
 #pragma mark - Rect
 
-NSRect ZWRectWithWidth(NSRect rect, CGFloat width)
+CGRect ZWRectWithWidth(CGRect rect, CGFloat width)
 {
-  NSRect newRect = rect;
+  CGRect newRect = rect;
   newRect.size.width = width;
   
   return newRect;
 }
 
-NSRect ZWRectWithHeight(NSRect rect, CGFloat height)
+CGRect ZWRectWithHeight(CGRect rect, CGFloat height)
 {
-  NSRect newRect = rect;
+  CGRect newRect = rect;
   newRect.size.height = height;
   
   return newRect;
 }
 
-NSRect ZWRectFitToRect(NSRect rect, NSRect container)
+CGRect ZWRectFitToRect(CGRect rect, CGRect container)
 {
-  if (NSContainsRect(container, rect)) {
+  if (CGRectContainsRect(container, rect)) {
     return ZWCenteredRectInRect(rect, container);
   } else {
     return rect;
   }
 }
 
-NSRect ZWCenteredRectInRect(NSRect rect, NSRect container)
+CGRect ZWCenteredRectInRect(CGRect rect, CGRect container)
 {
   rect.origin.y = container.origin.x + round((container.size.height - rect.size.height) / 2);
   rect.origin.x = container.origin.y + round((container.size.width - rect.size.width) / 2);
@@ -45,38 +45,38 @@ NSRect ZWCenteredRectInRect(NSRect rect, NSRect container)
 
 #pragma mark - Size
 
-BOOL ZWSizeContainsSize(NSSize container, NSSize size)
+BOOL ZWSizeContainsSize(CGSize container, CGSize size)
 {
 	return (size.width <= container.width && size.height <= container.height);
 }
 
-NSSize ZWSizeConstrainedToWidth(NSSize size, CGFloat width)
+CGSize ZWSizeConstrainedToWidth(CGSize size, CGFloat width)
 {
   if (size.width <= width) {
     return size;
   } else {
     CGFloat ratio = size.height / size.width;
-    return NSMakeSize(width, round(width * ratio));
+    return CGSizeMake(width, round(width * ratio));
   }
 }
 
-NSSize ZWSizeConstrainedToHeight(NSSize size, CGFloat height)
+CGSize ZWSizeConstrainedToHeight(CGSize size, CGFloat height)
 {
   if (size.height <= height) {
     return size;
   } else {
     CGFloat ratio = size.width / size.height;
-    return NSMakeSize(round(height * ratio), height);
+    return CGSizeMake(round(height * ratio), height);
   }
 }
 
-NSSize ZWSizeConstrainedToSize(NSSize size, NSSize container)
+CGSize ZWSizeConstrainedToSize(CGSize size, CGSize container)
 {
 	// Already small enough return source
 	if (ZWSizeContainsSize(container, size)) return size;
 	
 	// Try constraining to width
-	NSSize constrained = ZWSizeConstrainedToWidth(size, container.width);
+	CGSize constrained = ZWSizeConstrainedToWidth(size, container.width);
 	
 	// If constrained is still too large, need to also constrain height
 	if (!ZWSizeContainsSize(container, constrained)) {

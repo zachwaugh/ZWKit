@@ -15,8 +15,8 @@
 
 - (void)testRectWithWidth
 {
-  NSRect rect = NSMakeRect(0, 0, 100, 100);
-  NSRect newRect = ZWRectWithWidth(rect, 200);
+  CGRect rect = CGRectMake(0, 0, 100, 100);
+  CGRect newRect = ZWRectWithWidth(rect, 200);
   
   expect(newRect.size.width).to.equal(200);
   expect(newRect.size.height).to.equal(100);
@@ -26,8 +26,8 @@
 
 - (void)testRectWithHeight
 {
-  NSRect rect = NSMakeRect(0, 0, 100, 100);
-  NSRect newRect = ZWRectWithHeight(rect, 200);
+  CGRect rect = CGRectMake(0, 0, 100, 100);
+  CGRect newRect = ZWRectWithHeight(rect, 200);
   
   expect(newRect.size.height).to.equal(200);
   expect(newRect.size.width).to.equal(100);
@@ -38,9 +38,9 @@
 - (void)testRectFitToRect
 {
   // Simple case - rect completely fits in container and is centered
-  NSRect rect = NSMakeRect(0, 0, 100, 100);
-  NSRect container = NSMakeRect(0, 0, 1000, 1000);
-  NSRect newRect = ZWRectFitToRect(rect, container);
+  CGRect rect = CGRectMake(0, 0, 100, 100);
+  CGRect container = CGRectMake(0, 0, 1000, 1000);
+  CGRect newRect = ZWRectFitToRect(rect, container);
   
   expect(newRect.size.height).to.equal(100);
   expect(newRect.size.width).to.equal(100);
@@ -50,33 +50,33 @@
 
 - (void)testCenteredRectInRect
 {
-  NSRect expected = NSMakeRect(40, 40, 20, 20);
-	NSRect centered = ZWCenteredRectInRect(NSMakeRect(0, 0, 20, 20), NSMakeRect(0, 0, 100, 100));
+  CGRect expected = CGRectMake(40, 40, 20, 20);
+	CGRect centered = ZWCenteredRectInRect(CGRectMake(0, 0, 20, 20), CGRectMake(0, 0, 100, 100));
 	
-	expect(NSEqualRects(expected, centered)).to.beTruthy();
+	expect(CGRectEqualToRect(expected, centered)).to.beTruthy();
 	
-	expected = NSMakeRect(30, 20, 16, 16);
-	centered = ZWCenteredRectInRect(NSMakeRect(0, 0, 16, 16), NSMakeRect(10, 10, 56, 36));
+	expected = CGRectMake(30, 20, 16, 16);
+	centered = ZWCenteredRectInRect(CGRectMake(0, 0, 16, 16), CGRectMake(10, 10, 56, 36));
 	
-	expect(NSEqualRects(expected, centered)).to.beTruthy();
+	expect(CGRectEqualToRect(expected, centered)).to.beTruthy();
 }
 
 #pragma mark - Size
 
 - (void)testSizeConstrainedToWidth
 {
-  NSSize originalSize = NSMakeSize(4000, 3000);
+  CGSize originalSize = CGSizeMake(4000, 3000);
   
-  NSSize size = ZWSizeConstrainedToWidth(originalSize, 500);
+  CGSize size = ZWSizeConstrainedToWidth(originalSize, 500);
   expect(size.width).to.equal(500);
   expect(size.height).to.equal(375);
   
-  originalSize = NSMakeSize(2000, 4000);
+  originalSize = CGSizeMake(2000, 4000);
   size = ZWSizeConstrainedToWidth(originalSize, 500);
   expect(size.width).to.equal(500);
   expect(size.height).to.equal(1000);
   
-  originalSize = NSMakeSize(200, 200);
+  originalSize = CGSizeMake(200, 200);
   size = ZWSizeConstrainedToWidth(originalSize, 500);
   expect(size.width).to.equal(200);
   expect(size.height).to.equal(200);
@@ -84,18 +84,18 @@
 
 - (void)testSizeConstrainedToHeight
 {
-  NSSize originalSize = NSMakeSize(1024, 768);
+  CGSize originalSize = CGSizeMake(1024, 768);
   
-  NSSize size = ZWSizeConstrainedToHeight(originalSize, 500);
+  CGSize size = ZWSizeConstrainedToHeight(originalSize, 500);
   expect(size.width).to.equal(667);
   expect(size.height).to.equal(500);
   
-  originalSize = NSMakeSize(800, 1200);
+  originalSize = CGSizeMake(800, 1200);
   size = ZWSizeConstrainedToHeight(originalSize, 600);
   expect(size.width).to.equal(400);
   expect(size.height).to.equal(600);
   
-  originalSize = NSMakeSize(200, 200);
+  originalSize = CGSizeMake(200, 200);
   size = ZWSizeConstrainedToHeight(originalSize, 500);
   expect(size.width).to.equal(200);
   expect(size.height).to.equal(200);
@@ -103,25 +103,25 @@
 
 - (void)testHeightForSizeConstrainedToWidth
 {
-	NSSize originalSize = NSMakeSize(4000, 3000);
+	CGSize originalSize = CGSizeMake(4000, 3000);
   expect(ZWHeightForSizeConstrainedToWidth(originalSize, 500)).to.equal(375);
 }
 
 - (void)testSizeContainsSize
 {
-	expect(ZWSizeContainsSize(NSMakeSize(5, 5), NSMakeSize(1, 1))).to.beTruthy();
-	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(400, 400))).to.beTruthy();
-	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(1000, 1000))).to.beFalsy();
-	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(1000, 400))).to.beFalsy();
-	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(400, 1000))).to.beFalsy();
-	expect(ZWSizeContainsSize(NSMakeSize(500, 500), NSMakeSize(500, 500))).to.beTruthy();
+	expect(ZWSizeContainsSize(CGSizeMake(5, 5), CGSizeMake(1, 1))).to.beTruthy();
+	expect(ZWSizeContainsSize(CGSizeMake(500, 500), CGSizeMake(400, 400))).to.beTruthy();
+	expect(ZWSizeContainsSize(CGSizeMake(500, 500), CGSizeMake(1000, 1000))).to.beFalsy();
+	expect(ZWSizeContainsSize(CGSizeMake(500, 500), CGSizeMake(1000, 400))).to.beFalsy();
+	expect(ZWSizeContainsSize(CGSizeMake(500, 500), CGSizeMake(400, 1000))).to.beFalsy();
+	expect(ZWSizeContainsSize(CGSizeMake(500, 500), CGSizeMake(500, 500))).to.beTruthy();
 }
 
 - (void)testSizeConstrainedToSize
 {
-	expect(ZWSizeConstrainedToSize(NSMakeSize(500, 500), NSMakeSize(500, 500))).to.equal(NSMakeSize(500, 500));
-	expect(ZWSizeConstrainedToSize(NSMakeSize(400, 400), NSMakeSize(500, 500))).to.equal(NSMakeSize(400, 400));
-	expect(ZWSizeConstrainedToSize(NSMakeSize(1000, 1000), NSMakeSize(500, 500))).to.equal(NSMakeSize(500, 500));
+	expect(ZWSizeConstrainedToSize(CGSizeMake(500, 500), CGSizeMake(500, 500))).to.equal(CGSizeMake(500, 500));
+	expect(ZWSizeConstrainedToSize(CGSizeMake(400, 400), CGSizeMake(500, 500))).to.equal(CGSizeMake(400, 400));
+	expect(ZWSizeConstrainedToSize(CGSizeMake(1000, 1000), CGSizeMake(500, 500))).to.equal(CGSizeMake(500, 500));
 }
 
 @end
